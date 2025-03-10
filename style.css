@@ -8,7 +8,7 @@ body {
     color: white;
     font-size: 24px;
     height: 100vh;
-    transform: scale(1.01);
+    transform: scale(1.0);
 
 }
 
@@ -19,7 +19,7 @@ body {
 
 .owl-dots {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 8%;
 }
 
@@ -79,8 +79,8 @@ body {
 .explore-btn {
     background: none;
     position: absolute;
-    right: 0%;
-    bottom: -50%;
+    right: 8%;
+    bottom: -45%;
     border: 1px solid #fafafa;
     border-radius: 2px;
     font-size: 18px;
@@ -88,15 +88,16 @@ body {
     color: #fafafa;
     box-sizing: border-box;
     font-weight: 600;
-    padding: 18px 60px;
+    padding: 18px 70px;
     text-decoration: none;
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
     background: #fff !important;
 }
 
-.owl-theme .owl-dots .owl-dot.active:hover span{
+.owl-theme .owl-dots .owl-dot.active:hover span {
     background: #fff !important;
 }
 
@@ -114,6 +115,7 @@ body {
     width: 8px !important;
     height: 8px !important;
 }
+
 
 @media (max-width: 1024px) {
     .explore-btn {
@@ -139,12 +141,19 @@ body {
 
     .explore-btn {
         font-size: 16px;
-        padding: 14px 40px;
+        padding: 14px 50px;
         bottom: -40%;
+        right: 77%;
     }
 
     .item {
         background: url('./Diavel-tab.jpg') no-repeat center center/cover;
+    }
+
+    .owl-dots {
+        position: absolute;
+        bottom: 8%;
+        left: 75%;
     }
 }
 
@@ -169,4 +178,32 @@ body {
         background: url('./Diavel-mobile.jpg') no-repeat center center/cover;
     }
 
+    .owl-dots {
+        bottom: 8%;
+        left: 63%;
+    }
+
+    .explore-btn {
+        font-size: 16px;
+        padding: 14px 53px;
+        bottom: -43%;
+        right: 54%;
+        left: 0%;
+    }
+
+}
+
+
+@media (max-width: 320px) {
+    .explore-btn {
+        right: 45%;
+        font-size: 16px;
+        padding: 14px 50px;
+        bottom: -27%;
+    }
+
+    .owl-dots {
+        bottom: 3%;
+        left: 59%;
+    }
 }
