@@ -1,0 +1,172 @@
+body {
+    font-family: 'ducati', Arial, sans-serif !important;
+    font-weight: 400;
+}
+
+.owl-carousel .item {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    height: 100vh;
+    transform: scale(1.01);
+
+}
+
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+}
+
+.item {
+    background: url('./Diavel-desktop.jpg') no-repeat center center/cover;
+}
+
+.outer-container .item .title {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    max-width: 50%;
+    text-align: left;
+}
+
+.outer-container .item .txt {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    margin-bottom: 19px;
+    max-width: 50%;
+}
+
+.item>.content>.subtitle {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    font-weight: 400;
+    text-transform: uppercase;
+    max-width: 50%;
+}
+
+.item::before {
+    content: '';
+    display: block;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.6) 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.content {
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 9%;
+    z-index: 2;
+    font-family: 'ducati-extended', Arial, sans-serif;
+}
+
+.explore-btn {
+    background: none;
+    position: absolute;
+    right: 0%;
+    bottom: -50%;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    font-size: 18px;
+    text-align: center;
+    color: #fafafa;
+    box-sizing: border-box;
+    font-weight: 600;
+    padding: 18px 60px;
+    text-decoration: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #fff !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active:hover span{
+    background: #fff !important;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: none !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: none !important;
+    border-radius: 50% !important;
+    border: 1px solid white !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+@media (max-width: 1024px) {
+    .explore-btn {
+        bottom: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    .outer-container .item .title {
+        font-size: 36px;
+        max-width: 80%;
+    }
+
+    .outer-container .item .txt {
+        font-size: 16px;
+        max-width: 80%;
+    }
+
+    .content {
+        top: 50%;
+        left: 5%;
+    }
+
+    .explore-btn {
+        font-size: 16px;
+        padding: 14px 40px;
+        bottom: -40%;
+    }
+
+    .item {
+        background: url('./Diavel-tab.jpg') no-repeat center center/cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .outer-container .item .title {
+        font-size: 28px;
+        max-width: 100%;
+    }
+
+    .outer-container .item .txt {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .explore-btn {
+        font-size: 14px;
+        padding: 12px 30px;
+        bottom: -30%;
+    }
+
+    .item {
+        background: url('./Diavel-mobile.jpg') no-repeat center center/cover;
+    }
+
+}
